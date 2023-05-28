@@ -1,0 +1,7 @@
+C:\Users\Gabriela\Documents\aESTUDIO\INA\ProgramadorAplicaciones2022\modulo05POO_CSTI0208\Portafolios\EntregasPOO\Gabi_Portafolio09\Gabi_Portafolio09\Gabi_Portafolio09\bin\Debug\Gabi_Portafolio09.exe.config
+C:\Users\Gabriela\Documents\aESTUDIO\INA\ProgramadorAplicaciones2022\modulo05POO_CSTI0208\Portafolios\EntregasPOO\Gabi_Portafolio09\Gabi_Portafolio09\Gabi_Portafolio09\bin\Debug\Gabi_Portafolio09.exe
+C:\Users\Gabriela\Documents\aESTUDIO\INA\ProgramadorAplicaciones2022\modulo05POO_CSTI0208\Portafolios\EntregasPOO\Gabi_Portafolio09\Gabi_Portafolio09\Gabi_Portafolio09\bin\Debug\Gabi_Portafolio09.pdb
+C:\Users\Gabriela\Documents\aESTUDIO\INA\ProgramadorAplicaciones2022\modulo05POO_CSTI0208\Portafolios\EntregasPOO\Gabi_Portafolio09\Gabi_Portafolio09\Gabi_Portafolio09\obj\Debug\Gabi_Portafolio09.csproj.AssemblyReference.cache
+C:\Users\Gabriela\Documents\aESTUDIO\INA\ProgramadorAplicaciones2022\modulo05POO_CSTI0208\Portafolios\EntregasPOO\Gabi_Portafolio09\Gabi_Portafolio09\Gabi_Portafolio09\obj\Debug\Gabi_Portafolio09.csproj.CoreCompileInputs.cache
+C:\Users\Gabriela\Documents\aESTUDIO\INA\ProgramadorAplicaciones2022\modulo05POO_CSTI0208\Portafolios\EntregasPOO\Gabi_Portafolio09\Gabi_Portafolio09\Gabi_Portafolio09\obj\Debug\Gabi_Portafolio09.exe
+C:\Users\Gabriela\Documents\aESTUDIO\INA\ProgramadorAplicaciones2022\modulo05POO_CSTI0208\Portafolios\EntregasPOO\Gabi_Portafolio09\Gabi_Portafolio09\Gabi_Portafolio09\obj\Debug\Gabi_Portafolio09.pdb
