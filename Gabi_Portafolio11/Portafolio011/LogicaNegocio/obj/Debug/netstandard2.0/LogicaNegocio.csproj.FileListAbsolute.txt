@@ -1,0 +1,10 @@
+C:\Users\Gabriela\Documents\aESTUDIO\INA\ProgramadorAplicaciones2022\modulo05POO_CSTI0208\Portafolios\EntregasPOO\Gabi_Portafolio11\Portafolio011\LogicaNegocio\bin\Debug\netstandard2.0\LogicaNegocio.deps.json
+C:\Users\Gabriela\Documents\aESTUDIO\INA\ProgramadorAplicaciones2022\modulo05POO_CSTI0208\Portafolios\EntregasPOO\Gabi_Portafolio11\Portafolio011\LogicaNegocio\bin\Debug\netstandard2.0\LogicaNegocio.dll
+C:\Users\Gabriela\Documents\aESTUDIO\INA\ProgramadorAplicaciones2022\modulo05POO_CSTI0208\Portafolios\EntregasPOO\Gabi_Portafolio11\Portafolio011\LogicaNegocio\bin\Debug\netstandard2.0\LogicaNegocio.pdb
+C:\Users\Gabriela\Documents\aESTUDIO\INA\ProgramadorAplicaciones2022\modulo05POO_CSTI0208\Portafolios\EntregasPOO\Gabi_Portafolio11\Portafolio011\LogicaNegocio\obj\Debug\netstandard2.0\LogicaNegocio.csproj.AssemblyReference.cache
+C:\Users\Gabriela\Documents\aESTUDIO\INA\ProgramadorAplicaciones2022\modulo05POO_CSTI0208\Portafolios\EntregasPOO\Gabi_Portafolio11\Portafolio011\LogicaNegocio\obj\Debug\netstandard2.0\LogicaNegocio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gabriela\Documents\aESTUDIO\INA\ProgramadorAplicaciones2022\modulo05POO_CSTI0208\Portafolios\EntregasPOO\Gabi_Portafolio11\Portafolio011\LogicaNegocio\obj\Debug\netstandard2.0\LogicaNegocio.AssemblyInfoInputs.cache
+C:\Users\Gabriela\Documents\aESTUDIO\INA\ProgramadorAplicaciones2022\modulo05POO_CSTI0208\Portafolios\EntregasPOO\Gabi_Portafolio11\Portafolio011\LogicaNegocio\obj\Debug\netstandard2.0\LogicaNegocio.AssemblyInfo.cs
+C:\Users\Gabriela\Documents\aESTUDIO\INA\ProgramadorAplicaciones2022\modulo05POO_CSTI0208\Portafolios\EntregasPOO\Gabi_Portafolio11\Portafolio011\LogicaNegocio\obj\Debug\netstandard2.0\LogicaNegocio.csproj.CoreCompileInputs.cache
+C:\Users\Gabriela\Documents\aESTUDIO\INA\ProgramadorAplicaciones2022\modulo05POO_CSTI0208\Portafolios\EntregasPOO\Gabi_Portafolio11\Portafolio011\LogicaNegocio\obj\Debug\netstandard2.0\LogicaNegocio.dll
+C:\Users\Gabriela\Documents\aESTUDIO\INA\ProgramadorAplicaciones2022\modulo05POO_CSTI0208\Portafolios\EntregasPOO\Gabi_Portafolio11\Portafolio011\LogicaNegocio\obj\Debug\netstandard2.0\LogicaNegocio.pdb
