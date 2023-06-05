@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "nmyjWnivo4Y7WOjtglfoMx/PdPJKCFSajpVU3AjkIFhNMxsTlEE7q5//qJUmvZf1iBXbOQE2Z/XOvKc2UV6D0Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Gabriela\\Documents\\aESTUDIO\\INA\\ProgramadorAplicaciones2022\\modulo05POO_CSTI0208\\Portafolios\\EntregasPOO\\Gabi_Portafolio12\\Tienda\\Capa04Entidades\\Capa04Entidades.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Gabriela\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Gabriela\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

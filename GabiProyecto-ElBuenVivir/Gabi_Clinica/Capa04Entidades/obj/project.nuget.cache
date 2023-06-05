@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "rBUGaOkh2n7h8Dh03Axf8XOmmdsvwZbe9UCMLaLN2RJaDnQ7/Uf+K7vY5Bbu+CdLyIvfzSlQWpF/et/2fuJ/BQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Gabriela\\Documents\\aESTUDIO\\INA\\ProgramadorAplicaciones2022\\modulo05POO_CSTI0208\\Portafolios\\EntregasPOO\\GabiProyecto-ElBuenVivir\\Gabi_Clinica\\Capa04Entidades\\Capa04Entidades.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Gabriela\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Gabriela\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
