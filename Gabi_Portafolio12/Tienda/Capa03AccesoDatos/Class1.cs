@@ -1,4 +1,5 @@
 ﻿using System;
+using Capa04Entidades;
 
 namespace Capa03AccesoDatos
 {

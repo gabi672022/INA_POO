@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Capa02Logica;
+using Capa04Entidades;
 
 namespace Capa01Presentacion
 {

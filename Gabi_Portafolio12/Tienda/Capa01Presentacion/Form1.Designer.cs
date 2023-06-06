@@ -53,18 +53,21 @@ namespace Capa01Presentacion
             this.stripClientes.Name = "stripClientes";
             this.stripClientes.Size = new System.Drawing.Size(69, 20);
             this.stripClientes.Text = "CLIENTES";
+            this.stripClientes.Click += new System.EventHandler(this.stripClientes_Click);
             // 
             // stripProductos
             // 
             this.stripProductos.Name = "stripProductos";
             this.stripProductos.Size = new System.Drawing.Size(86, 20);
             this.stripProductos.Text = "PRODUCTOS";
+            this.stripProductos.Click += new System.EventHandler(this.stripProductos_Click);
             // 
             // stripFacturación
             // 
             this.stripFacturación.Name = "stripFacturación";
             this.stripFacturación.Size = new System.Drawing.Size(98, 20);
             this.stripFacturación.Text = "FACTURACIÓN";
+            this.stripFacturación.Click += new System.EventHandler(this.stripFacturación_Click);
             // 
             // Form1
             // 

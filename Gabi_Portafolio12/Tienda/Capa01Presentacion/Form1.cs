@@ -16,5 +16,27 @@ namespace Capa01Presentacion
         {
             InitializeComponent();
         }
+
+        private void stripClientes_Click(object sender, EventArgs e)
+        {
+            Clientes Cliente = new Clientes();
+            Cliente.MdiParent = this;
+            Cliente.Show();
+        }
+
+        private void stripProductos_Click(object sender, EventArgs e)
+        {
+            Productos Producto = new Productos();
+            Producto.MdiParent = this;
+            Producto.Show();
+
+        }
+
+        private void stripFacturación_Click(object sender, EventArgs e)
+        {
+            Facturacion Factura = new Facturacion();
+            Factura.MdiParent = this;
+            Factura.Show();
+        }
     }
 }
