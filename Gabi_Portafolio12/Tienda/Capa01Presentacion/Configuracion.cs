@@ -12,7 +12,7 @@ namespace Capa01Presentacion
         {
             get
             {
-                return Properties.Settings.Default.ConnectionString;
+                return Properties.Settings.Default.connectionString;
             }
         }
     }

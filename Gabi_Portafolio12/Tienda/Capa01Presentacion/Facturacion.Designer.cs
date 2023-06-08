@@ -105,6 +105,7 @@ namespace Capa01Presentacion
             this.ClientSize = new System.Drawing.Size(980, 450);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Facturacion";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Facturacion";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

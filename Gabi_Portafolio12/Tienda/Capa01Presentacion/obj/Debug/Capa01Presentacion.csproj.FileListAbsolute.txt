@@ -16,3 +16,6 @@ C:\Users\Gabriela\Documents\aESTUDIO\INA\ProgramadorAplicaciones2022\modulo05POO
 C:\Users\Gabriela\Documents\aESTUDIO\INA\ProgramadorAplicaciones2022\modulo05POO_CSTI0208\Portafolios\EntregasPOO\Gabi_Portafolio12\Tienda\Capa01Presentacion\obj\Debug\Capa01Presentacion.Clientes.resources
 C:\Users\Gabriela\Documents\aESTUDIO\INA\ProgramadorAplicaciones2022\modulo05POO_CSTI0208\Portafolios\EntregasPOO\Gabi_Portafolio12\Tienda\Capa01Presentacion\obj\Debug\Capa01Presentacion.Facturacion.resources
 C:\Users\Gabriela\Documents\aESTUDIO\INA\ProgramadorAplicaciones2022\modulo05POO_CSTI0208\Portafolios\EntregasPOO\Gabi_Portafolio12\Tienda\Capa01Presentacion\obj\Debug\Capa01Presentacion.Productos.resources
+C:\Users\Gabriela\Documents\aESTUDIO\INA\ProgramadorAplicaciones2022\modulo05POO_CSTI0208\Portafolios\EntregasPOO\Gabi_Portafolio12\Tienda\Capa01Presentacion\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\Gabriela\Documents\aESTUDIO\INA\ProgramadorAplicaciones2022\modulo05POO_CSTI0208\Portafolios\EntregasPOO\Gabi_Portafolio12\Tienda\Capa01Presentacion\bin\Debug\System.Data.SqlClient.dll
+C:\Users\Gabriela\Documents\aESTUDIO\INA\ProgramadorAplicaciones2022\modulo05POO_CSTI0208\Portafolios\EntregasPOO\Gabi_Portafolio12\Tienda\Capa01Presentacion\bin\Debug\System.Data.SqlClient.xml

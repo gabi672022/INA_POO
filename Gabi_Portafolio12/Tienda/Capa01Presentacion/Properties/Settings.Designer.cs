@@ -25,11 +25,11 @@ namespace Capa01Presentacion.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-SCHQG4U;Initial Catalog=CAPAS_PRACTICA1;User ID=sa;Password=*" +
-            "**********;Integrated Security=True")]
-        public string ConnectionString {
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-SCHQG4U;Initial Catalog=BD_EJEMPLO_CAPAS;User ID=sa; password" +
+            "=Temporal1")]
+        public string connectionString {
             get {
-                return ((string)(this["ConnectionString"]));
+                return ((string)(this["connectionString"]));
             }
         }
     }
