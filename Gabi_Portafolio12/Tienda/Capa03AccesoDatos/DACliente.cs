@@ -13,10 +13,10 @@ namespace Capa03AccesoDatos
         private string _cadenaConexion;
         private string _mensaje;
 
-
+       
 
         //Propiedades
-        public string Mensaje { get => _mensaje; }
+        //public string Mensaje { get => _mensaje; }
 
         //Constructor
         public DACliente(string cadenaConexion)
@@ -32,16 +32,17 @@ namespace Capa03AccesoDatos
             //Establecer el objeto conexión
             SqlConnection cnx = new SqlConnection(_cadenaConexion);
 
+string sentencia = " INSERT INTO CLIENTES(NOMBRE, TELEFONO, DIRECCION) VALUES (@NOMBRE, @TELEFONO, @DIRECCION) SELECT @@IDENTITY";
+
+
             //Establecer los camandos SQL
-            SqlCommand comando = new SqlCommand();
-            comando.Connection = cnx;
+            SqlCommand comando = new SqlCommand(sentencia, cnx);
+  
+            comando.Parameters.AddWithValue("@NOMBRE", cliente.Nombre);
+            comando.Parameters.AddWithValue("@TELEFONO", cliente.Telefono);
+            comando.Parameters.AddWithValue("@DIRECCION", cliente.Direccion);
 
-            string sentencia = " INSERT INTO CLIENTES(NOMBRE, TELEFONO, DIRECCION) VALUES (@NOMBRE, @TELEFONO, @DIRECCION) SELECT @@IDENTITY";
-            comando.Parameters.AddWithValue("@NOMBRE", cliente.getNombre());
-            comando.Parameters.AddWithValue("@TELEFONO", cliente.getTelefono());
-            comando.Parameters.AddWithValue("@DIRECCION", cliente.getDireccion());
-
-            comando.CommandText = sentencia;
+            comando.CommandType = CommandType.Text;
 
             try
             {
@@ -59,7 +60,6 @@ namespace Capa03AccesoDatos
                 cnx.Dispose();
                 comando.Dispose();
             }
-
 
             return id;
 

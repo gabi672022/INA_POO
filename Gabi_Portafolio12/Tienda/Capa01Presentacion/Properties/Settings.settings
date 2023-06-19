@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="connectionString" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">Data Source=DESKTOP-SCHQG4U;Initial Catalog=BD_EJEMPLO_CAPAS;User ID=sa; password=Temporal1</Value>
+      <Value Profile="(Default)">Data Source=DESKTOP-SCHQG4U;Initial Catalog=CAPAS_PRACTICA1;User ID=sa; password=Temporal1</Value>
     </Setting>
   </Settings>
 </SettingsFile>

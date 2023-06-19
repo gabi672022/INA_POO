@@ -16,7 +16,10 @@ namespace Capa01Presentacion
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Inicio());
+            //Application.Run(new Login());
+            //Application.Run(new FrmFuncionarios());
+            //Application.Run(new FrmPuestoTrabajo());
+            Application.Run(new FrmInicio());
         }
     }
 }
