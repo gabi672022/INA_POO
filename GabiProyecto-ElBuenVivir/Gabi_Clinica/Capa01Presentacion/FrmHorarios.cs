@@ -48,17 +48,17 @@ namespace Capa01Presentacion
 
         public void CargarListaGrid(string condicion = "")
         {
-            LogicaEspecialistas logEspecialista = new LogicaEspecialistas(Configuracion.getCadenaConexion);
+            //LogicaEspecialistas logEspecialista = new LogicaEspecialistas(Configuracion.getCadenaConexion);
 
-            List<EntidadEspecialistas> listaEspecialistas;
+            //List<EntidadEspecialistas> listaEspecialistas;
 
-            listaEspecialistas = logEspecialista.listaEspecialistas();
+            //listaEspecialistas = logEspecialista.listaEspecialistas();
 
-            foreach (EntidadEspecialistas item in listaEspecialistas)
-            {
-                //dgvEspecialistas.Rows.Add(new object[] { "", item.objEspecialidades.NombreEsp, item., item.PrimerApellido, item.SegundoApellido, item.Cedula, item.FechaNacimiento, item.Genero, item.Telefono, item.Correo, item.objPuestoTrabajo.IdPuestoTrabajo });
+            //foreach (EntidadEspecialistas item in listaEspecialistas)
+            //{
+            //    //dgvEspecialistas.Rows.Add(new object[] { "", item.objEspecialidades.NombreEsp, item., item.PrimerApellido, item.SegundoApellido, item.Cedula, item.FechaNacimiento, item.Genero, item.Telefono, item.Correo, item.objPuestoTrabajo.IdPuestoTrabajo });
 
-            }
+            //}
         }//FinCargarListaGrid
 
 

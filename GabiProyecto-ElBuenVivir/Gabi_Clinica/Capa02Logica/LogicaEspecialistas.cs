@@ -16,24 +16,24 @@ namespace Capa02Logica
             _cadenaConexion = cadenaConexion;
         }
 
-        public List<EntidadEspecialistas> listaEspecialistas()
-        {
-            List<EntidadEspecialistas> especialistas = new List<EntidadEspecialistas>();
+        //public List<EntidadEspecialistas> listaEspecialistas()
+        //{
+        //    List<EntidadEspecialistas> especialistas = new List<EntidadEspecialistas>();
 
-            AccesoDatosEspecialistas accesoEspecialista = new AccesoDatosEspecialistas(_cadenaConexion);
+        //    AccesoDatosEspecialistas accesoEspecialista = new AccesoDatosEspecialistas(_cadenaConexion);
 
-            try
-            {
-                especialistas = accesoEspecialista.listaEspecialistas();
-            }
-            catch (Exception ex)
-            {
+        //    try
+        //    {
+        //        especialistas = accesoEspecialista.listaEspecialistas();
+        //    }
+        //    catch (Exception ex)
+        //    {
 
-                throw ex;
-            }
+        //        throw ex;
+        //    }
 
-            return especialistas;
-        }//Fin ListaPuestoTrabajo
+        //    return especialistas;
+        //}//Fin ListaPuestoTrabajo
 
 
     }//Fin LogicaEspecialistas
