@@ -69,6 +69,21 @@ namespace Capa01Presentacion
         {
             AbrirFormulario(mnuMantenimiento, new FrmPuestoTrabajo());
         }
+
+        private void especialidadesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(mnuMantenimiento, new FrmEspecialidad());
+        }
+
+        private void establecerHorarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(mnuEspecialidades, new FrmHorarios());
+        }
+
+        private void controlDeAccesoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(mnuMantenimiento, new FrmControlAcceso());
+        }
     }
     
 }

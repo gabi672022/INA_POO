@@ -61,5 +61,25 @@ namespace Capa02Logica
             return puestosTrabajo;
         }//Fin ListaPuestoTrabajo
 
+        public bool EditarPuestoTrabajo(EntidadPuestoTrabajo puestoTrabajo, out string Mensaje)
+        {
+            bool respuesta = false;
+            Mensaje = string.Empty;
+
+            AccesoDatosPuestoTrabajo accesoDatos = new AccesoDatosPuestoTrabajo(_cadenaConexion);
+            try
+            {
+                respuesta = accesoDatos.EditarPuestoTrabajo(puestoTrabajo , out Mensaje);
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+
+            return respuesta;
+        }//Fin EditarPuestoTrabajo
+
+
     }
 }

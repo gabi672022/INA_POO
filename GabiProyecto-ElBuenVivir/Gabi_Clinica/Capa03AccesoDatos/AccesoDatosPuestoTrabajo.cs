@@ -88,7 +88,41 @@ namespace Capa03AccesoDatos
 
             return puestosTrabajo;
 
-        }//
+        }//listaPuestoTrabajo 
+
+        public bool EditarPuestoTrabajo(EntidadPuestoTrabajo puestoTrabajo, out string Mensaje)
+        {
+            bool respuesta = false;
+            Mensaje = string.Empty;
+
+            try
+            {
+                SqlConnection conexion = new SqlConnection(_cadenaConexion);
+
+                SqlCommand comando = new SqlCommand("spEditarPuestoTrabajo", conexion);
+                comando.Parameters.AddWithValue("IdPuestoTrabajo", puestoTrabajo.IdPuestoTrabajo);
+                comando.Parameters.AddWithValue("Nombre", puestoTrabajo.Nombre);
+               
+                comando.Parameters.Add("Respuesta", SqlDbType.Int).Direction = ParameterDirection.Output;
+                comando.Parameters.Add("Mensaje", SqlDbType.VarChar, 200).Direction = ParameterDirection.Output;
+
+                comando.CommandType = CommandType.StoredProcedure;
+
+                conexion.Open();
+                comando.ExecuteNonQuery();
+                respuesta = Convert.ToBoolean(comando.Parameters["Respuesta"].Value);
+                Mensaje = comando.Parameters["Mensaje"].Value.ToString();
+
+
+            }
+            catch (Exception ex)
+            {
+                respuesta = false;
+                Mensaje = ex.Message;
+            }
+
+            return respuesta;
+        }//Fin EditarFuncionario
 
 
 

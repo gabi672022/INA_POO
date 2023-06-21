@@ -74,6 +74,7 @@ namespace Capa01Presentacion
                     resultado = logicaPaciente.Insertar(paciente);
                     Limpiar();
                     MessageBox.Show("Operación realizada con éxito", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                  
                 }
             }
             catch (Exception ex)
@@ -95,10 +96,10 @@ namespace Capa01Presentacion
 
             foreach (EntidadPacientes item in listaPacientes)
             {
-                dgvPacientes.Rows.Add(new object[] { "", item.IdPaciente , item.Nombre, item.PrimerApellido, item.SegundoApellido, item.Cedula, item.FechaNacimiento, item.Genero, item.Telefono, item.Correo});
+                dgvPacientes.Rows.Add(new object[] { "", item.IdPaciente, item.Nombre, item.PrimerApellido, item.SegundoApellido, item.Cedula, item.FechaNacimiento, item.Genero, item.Telefono, item.Correo });
 
             }
-        }
+        }//FinCargarListaGrid
 
 
         //********************************************
@@ -108,17 +109,9 @@ namespace Capa01Presentacion
         {
             Close();
         }
-        //private void CargarPuestosTrabajo()
-        //{
-
-        //    LogicaPuestoTrabajo LogicaPuestoTrabajo = new LogicaPuestoTrabajo(Configuracion.getCadenaConexion);
-        //    List<EntidadPuestoTrabajo> puestoTrabajos = LogicaPuestoTrabajo.listaPuestoTrabajo();
-        //    cbbPuestoTrabajo.DataSource = puestoTrabajos;
-        //    cbbPuestoTrabajo.DisplayMember = "Nombre";
-        //    cbbPuestoTrabajo.ValueMember = "IdPuestoTrabajo";
+       
 
 
-        //}
         private void cbbPuestoTrabajo_SelectedIndexChanged(object sender, EventArgs e)
         {
 
@@ -128,9 +121,6 @@ namespace Capa01Presentacion
         {
             try
             {
-                //CargarListaDataSet();
-                //En el load del formulario se llama a carga el gridview con el data set
-                //CargarListaArray();
                 CargarListaGrid();
             }
             catch (Exception ex)
@@ -140,9 +130,13 @@ namespace Capa01Presentacion
             }
         }//Fin FrmFuncionarios_Load
 
+
+
+
+
+
         private void dgvPacientes_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-           
+        {//Evento que permite selecionar el contenido de una fila del datagridview
 
             if (dgvPacientes.Columns[e.ColumnIndex].Name == "btnSeleccionar")
             {
@@ -158,22 +152,20 @@ namespace Capa01Presentacion
                     txtGenero.Text = dgvPacientes.Rows[indice].Cells["Genero"].Value.ToString();
                     txtTelefono.Text = dgvPacientes.Rows[indice].Cells["Telefono"].Value.ToString();
                     txtCorreo.Text = dgvPacientes.Rows[indice].Cells["Correo"].Value.ToString();
-                    //cbbPuestoTrabajo.Text= dgvPacientes.Rows[indice].Cells["PuestoTrabajo"].Value.ToString();
-
-                    
                 }
             }
 
         }//Fin dgvFuncionarios_CellContentClick
 
+        //**********************************
+
+        //**********************************
+
+
         private void btnEditar_Click(object sender, EventArgs e)
         {
             LogicaPacientes logicaPaciente = new LogicaPacientes(Configuracion.getCadenaConexion);
             EntidadPacientes paciente = generarEntidadPaciente();
-
-
-
-
 
             string Mensaje = string.Empty;
 
@@ -220,8 +212,11 @@ namespace Capa01Presentacion
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-
         }//Fin btnEditar_Click
+
+
+
+
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
@@ -236,32 +231,17 @@ namespace Capa01Presentacion
                 {
                     paciente.IdPaciente = Convert.ToInt32(txtIdSeleccionado.Text);
                     bool respuesta = logicaPaciente.EliminarPaciente(paciente, out Mensaje);
-                    //if (respuesta)
-                    //{
-                    //    DataGridViewRow fila = dgvFuncionarios.Rows[Convert.ToInt32(btnSeleccionar.Text)];
-
-
-
-                    //    //dgvFuncionarios.Rows.RemoveAt(Convert.ToInt32(btnSeleccionar.Text));
-                    //}
                 }
             }
 
+        }//btn btnEliminar_Click
 
 
-
-        }
 
         private void btnSalir_Click_1(object sender, EventArgs e)
         {
             Close();
         }
-
-
-
-
-
-
 
 
         //private void FrmPacientes_Load(object sender, EventArgs e)
@@ -271,6 +251,5 @@ namespace Capa01Presentacion
 
 
 
-    }//FinFrmPacientes : Form
-    
+    }//FinFrmPacientes : Form 
 }

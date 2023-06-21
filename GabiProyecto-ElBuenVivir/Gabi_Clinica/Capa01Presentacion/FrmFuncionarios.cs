@@ -119,17 +119,17 @@ namespace Capa01Presentacion
         {
             Close();
         }
+
         private void CargarPuestosTrabajo()
         {
-
             LogicaPuestoTrabajo LogicaPuestoTrabajo = new LogicaPuestoTrabajo(Configuracion.getCadenaConexion);
             List<EntidadPuestoTrabajo> puestoTrabajos = LogicaPuestoTrabajo.listaPuestoTrabajo();
             cbbPuestoTrabajo.DataSource = puestoTrabajos;
             cbbPuestoTrabajo.DisplayMember = "Nombre";
             cbbPuestoTrabajo.ValueMember = "IdPuestoTrabajo";
+        }//FinCargarPuestosTrabajo
 
 
-        }
         private void cbbPuestoTrabajo_SelectedIndexChanged(object sender, EventArgs e)
         {
 
@@ -139,9 +139,6 @@ namespace Capa01Presentacion
         {
             try
             {
-                //CargarListaDataSet();
-                //En el load del formulario se llama a carga el gridview con el data set
-                //CargarListaArray();
                 CargarListaGrid();
             }
             catch (Exception ex)
@@ -151,6 +148,7 @@ namespace Capa01Presentacion
             }
         }//Fin FrmFuncionarios_Load
 
+         
         private void dgvFuncionarios_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             LogicaPuestoTrabajo LogicaPuestoTrabajo = new LogicaPuestoTrabajo(Configuracion.getCadenaConexion);
@@ -186,10 +184,6 @@ namespace Capa01Presentacion
             LogicaFuncionarios logicaFunionario = new LogicaFuncionarios(Configuracion.getCadenaConexion);
             EntidadFuncionarios funcionario = generarEntidadFuncionario();
 
-
-
-
-
             string Mensaje = string.Empty;
 
             try
@@ -216,7 +210,6 @@ namespace Capa01Presentacion
                         fila.Cells["Genero"].Value = txtGenero.Text;
                         fila.Cells["Telefono"].Value = txtTelefono.Text;
                         fila.Cells["Correo"].Value = txtCorreo.Text;
-
 
                         fila.Cells["PuestoTrabajo"].Value = cbbPuestoTrabajo.SelectedItem;
 
@@ -254,29 +247,14 @@ namespace Capa01Presentacion
                 {
                     funcionario.IdFuncionario = Convert.ToInt32(txtIdSeleccionado.Text);
                     bool respuesta = logicaFunionario.EliminarFuncionario(funcionario, out Mensaje);
-                    //if (respuesta)
-                    //{
-                    //    DataGridViewRow fila = dgvFuncionarios.Rows[Convert.ToInt32(btnSeleccionar.Text)];
-                       
-                        
-
-                    //    //dgvFuncionarios.Rows.RemoveAt(Convert.ToInt32(btnSeleccionar.Text));
-                    //}
+                   
                 }
             }
 
-
-
-
-        }
+        }//FinbtnEliminar_Click
 
 
 
     }
-    //********************************************
-
-
-
-
 }//Fin FrmFuncionarios
 

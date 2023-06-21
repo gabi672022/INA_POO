@@ -87,12 +87,24 @@ create table Pacientes (
 create table Especialistas (
 	IdEspecialista int identity(1,1) constraint pk_IdEspecialista primary key,
 	IdEspecialidad int not null constraint fk_IdEspecialidad foreign key (IdEspecialidad) references Especialidades(IdEspecialidad),
-	IdFuncionario int not null constraint fk3_IdFuncionario foreign key (IdFuncionario) references Funcionarios(IdFuncionario),
-	IdPuestoTrabajo int not null constraint fk2_IdPuestoTrabajo foreign key (IdPuestoTrabajo) references PuestoTrabajo(IdPuestoTrabajo),
+	--IdFuncionario int not null constraint fk3_IdFuncionario foreign key (IdFuncionario) references Funcionarios(IdFuncionario),
+	--IdPuestoTrabajo int not null constraint fk2_IdPuestoTrabajo foreign key (IdPuestoTrabajo) references PuestoTrabajo(IdPuestoTrabajo),
 	HorarioDisponible datetime,
 	FechaCreacion datetime default getdate(),
 	Estado bit
 )
+
+--ALTER TABLE Especialistas
+--DROP CONSTRAINT fk3_IdFuncionario;
+
+--ALTER TABLE Especialistas
+--DROP COLUMN IdFuncionario;
+
+
+--ALTER TABLE Especialistas
+--DROP CONSTRAINT fk2_IdPuestoTrabajo;
+--ALTER TABLE Especialistas
+--DROP COLUMN IdPuestoTrabajo;
 
 --9.*************
 create table Citas (

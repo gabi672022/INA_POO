@@ -38,24 +38,24 @@ namespace Capa02Logica
             return id;
         }//Fin Insertar
 
-        public DataSet ListarFuncionarios(string condicion = "", string orden = "")
-        {
-            DataSet dsFuncionarios;
-            AccesoDatosFuncionario accesoDatosFuncionario = new AccesoDatosFuncionario(_cadenaConexion);
+        //public DataSet ListarFuncionarios(string condicion = "", string orden = "")
+        //{
+        //    DataSet dsFuncionarios;
+        //    AccesoDatosFuncionario accesoDatosFuncionario = new AccesoDatosFuncionario(_cadenaConexion);
 
-            try
-            {
-                dsFuncionarios = accesoDatosFuncionario.ListarFuncionarios(condicion, orden);
-            }
-            catch (Exception)
-            {
+        //    try
+        //    {
+        //        dsFuncionarios = accesoDatosFuncionario.ListarFuncionarios(condicion, orden);
+        //    }
+        //    catch (Exception)
+        //    {
 
-                throw;
-            }
+        //        throw;
+        //    }
 
-            return dsFuncionarios;
+        //    return dsFuncionarios;
 
-        }//FinDataSet ListarFuncionarios
+        //}//FinDataSet ListarFuncionarios
 
 
         public List<EntidadFuncionarios> ListarFuncionariosLista(string condicion = "")

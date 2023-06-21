@@ -38,24 +38,24 @@ namespace Capa02Logica
             return id;
         }//Fin Insertar
 
-        public DataSet ListarPacientes(string condicion = "", string orden = "")
-        {
-            DataSet dsPacientes;
-            AccesoDatosPaciente accesoDatosPaciente = new AccesoDatosPaciente(_cadenaConexion);
+        //public DataSet ListarPacientes(string condicion = "", string orden = "")
+        //{
+        //    DataSet dsPacientes;
+        //    AccesoDatosPaciente accesoDatosPaciente = new AccesoDatosPaciente(_cadenaConexion);
 
-            try
-            {
-                dsPacientes = accesoDatosPaciente.ListarPacientes(condicion, orden);
-            }
-            catch (Exception)
-            {
+        //    try
+        //    {
+        //        dsPacientes = accesoDatosPaciente.ListarPacientes(condicion, orden);
+        //    }
+        //    catch (Exception)
+        //    {
 
-                throw;
-            }
+        //        throw;
+        //    }
 
-            return dsPacientes;
+        //    return dsPacientes;
 
-        }//FinDataSet ListarPacientes
+        //}//FinDataSet ListarPacientes
 
 
         public List<EntidadPacientes> ListarPacientesLista(string condicion = "")
@@ -92,7 +92,7 @@ namespace Capa02Logica
             }
 
             return respuesta;
-        }//Fin Insertar
+        }//Fin EditarListaPaciente
 
         public bool EliminarPaciente(EntidadPacientes paciente, out string Mensaje)
         {

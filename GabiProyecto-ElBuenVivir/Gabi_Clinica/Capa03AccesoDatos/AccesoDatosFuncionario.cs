@@ -74,49 +74,49 @@ namespace Capa03AccesoDatos
 
 
         //Metodo que devuelve un dataset con datos de los funcionarios, para ser mostrados en el DataGridView
-        public DataSet ListarFuncionarios(string condicion="", string orden = "")
-        {
-            DataSet datos = new DataSet(); //En datos se guardarán los resultados del Select
+        //public DataSet ListarFuncionarios(string condicion="", string orden = "")
+        //{
+        //    DataSet datos = new DataSet(); //En datos se guardarán los resultados del Select
 
-            SqlConnection conexion = new SqlConnection(_cadenaConexion);
-            SqlDataAdapter adapter;
+        //    SqlConnection conexion = new SqlConnection(_cadenaConexion);
+        //    SqlDataAdapter adapter;
 
-            List<EntidadFuncionarios> funcionarios;
-            EntidadPuestoTrabajo objPuestoTrabajo = new EntidadPuestoTrabajo();
+        //    List<EntidadFuncionarios> funcionarios;
+        //    EntidadPuestoTrabajo objPuestoTrabajo = new EntidadPuestoTrabajo();
 
-            string consultaFuncionarios = "Select IdFuncionario, Nombre, PrimerApellido, SegundoApellido, Cedula, FechaNacimiento, Genero, Telefono, Correo, FechaCreacion, Estado, IdPuestoTrabajo from Funcionarios";
+        //    string consultaFuncionarios = "Select IdFuncionario, Nombre, PrimerApellido, SegundoApellido, Cedula, FechaNacimiento, Genero, Telefono, Correo, FechaCreacion, Estado, IdPuestoTrabajo from Funcionarios";
 
-            //Si el parámetro condición no está vacío lo concatena a la consultaFuncioanrios
-            if (!string.IsNullOrEmpty(condicion))
-            {
-                consultaFuncionarios = string.Format("{0} where {1}", consultaFuncionarios, condicion);
-            }
+        //    //Si el parámetro condición no está vacío lo concatena a la consultaFuncioanrios
+        //    if (!string.IsNullOrEmpty(condicion))
+        //    {
+        //        consultaFuncionarios = string.Format("{0} where {1}", consultaFuncionarios, condicion);
+        //    }
 
-            //Si el parámetro orden no está vacío lo concatena a la sentencia
-            if (!string.IsNullOrEmpty(orden))
-            {
-                consultaFuncionarios = string.Format("{0} order by {1}", consultaFuncionarios, orden);
-            }
+        //    //Si el parámetro orden no está vacío lo concatena a la sentencia
+        //    if (!string.IsNullOrEmpty(orden))
+        //    {
+        //        consultaFuncionarios = string.Format("{0} order by {1}", consultaFuncionarios, orden);
+        //    }
 
-            try
-            {
-                adapter = new SqlDataAdapter(consultaFuncionarios, conexion);
-                //El adapter.Fill llena "adapter" con los datos que tiene el dataSet "datos" y le asigna el nombre "Clientes"
+        //    try
+        //    {
+        //        adapter = new SqlDataAdapter(consultaFuncionarios, conexion);
+        //        //El adapter.Fill llena "adapter" con los datos que tiene el dataSet "datos" y le asigna el nombre "Clientes"
 
-                adapter.Fill(datos, "Funcionarios");
-                //Agregar con lista
+        //        adapter.Fill(datos, "Funcionarios");
+        //        //Agregar con lista
 
                
                  
-            }
-            catch (Exception)
-            {
+        //    }
+        //    catch (Exception)
+        //    {
 
-                throw;
-            }
+        //        throw;
+        //    }
 
-            return datos;//Devuelve el dataSet
-        }//Fin DataSet
+        //    return datos;//Devuelve el dataSet
+        //}//Fin DataSet
 
 
         public List<EntidadFuncionarios> ListarFuncionariosL(string condicion = "")

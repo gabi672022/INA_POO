@@ -74,49 +74,49 @@ namespace Capa03AccesoDatos
 
 
         //Metodo que devuelve un dataset con datos de los funcionarios, para ser mostrados en el DataGridView
-        public DataSet ListarPacientes(string condicion = "", string orden = "")
-        {
-            DataSet datos = new DataSet(); //En datos se guardarán los resultados del Select
+        //public DataSet ListarPacientes(string condicion = "", string orden = "")
+        //{
+        //    DataSet datos = new DataSet(); //En datos se guardarán los resultados del Select
 
-            SqlConnection conexion = new SqlConnection(_cadenaConexion);
-            SqlDataAdapter adapter;
+        //    SqlConnection conexion = new SqlConnection(_cadenaConexion);
+        //    SqlDataAdapter adapter;
 
-            List<EntidadPacientes> pacientes;
-            EntidadPuestoTrabajo objPuestoTrabajo = new EntidadPuestoTrabajo();
+        //    List<EntidadPacientes> pacientes;
+        //    EntidadPuestoTrabajo objPuestoTrabajo = new EntidadPuestoTrabajo();
 
-            string consultaPaciente = "Select IdPaciente, Nombre, PrimerApellido, SegundoApellido, Cedula, FechaNacimiento, Genero, Telefono, Correo, FechaCreacion, Estado,  from Paciente";
+        //    string consultaPaciente = "Select IdPaciente, Nombre, PrimerApellido, SegundoApellido, Cedula, FechaNacimiento, Genero, Telefono, Correo, FechaCreacion, Estado,  from Paciente";
 
-            //Si el parámetro condición no está vacío lo concatena a la consultaFuncioanrios
-            if (!string.IsNullOrEmpty(condicion))
-            {
-                consultaPaciente = string.Format("{0} where {1}", consultaPaciente, condicion);
-            }
+        //    //Si el parámetro condición no está vacío lo concatena a la consultaFuncioanrios
+        //    if (!string.IsNullOrEmpty(condicion))
+        //    {
+        //        consultaPaciente = string.Format("{0} where {1}", consultaPaciente, condicion);
+        //    }
 
-            //Si el parámetro orden no está vacío lo concatena a la sentencia
-            if (!string.IsNullOrEmpty(orden))
-            {
-                consultaPaciente = string.Format("{0} order by {1}", consultaPaciente, orden);
-            }
+        //    //Si el parámetro orden no está vacío lo concatena a la sentencia
+        //    if (!string.IsNullOrEmpty(orden))
+        //    {
+        //        consultaPaciente = string.Format("{0} order by {1}", consultaPaciente, orden);
+        //    }
 
-            try
-            {
-                adapter = new SqlDataAdapter(consultaPaciente, conexion);
-                //El adapter.Fill llena "adapter" con los datos que tiene el dataSet "datos" y le asigna el nombre "Clientes"
+        //    try
+        //    {
+        //        adapter = new SqlDataAdapter(consultaPaciente, conexion);
+        //        //El adapter.Fill llena "adapter" con los datos que tiene el dataSet "datos" y le asigna el nombre "Clientes"
 
-                adapter.Fill(datos, "Funcionarios");
-                //Agregar con lista
+        //        adapter.Fill(datos, "Funcionarios");
+        //        //Agregar con lista
 
 
 
-            }
-            catch (Exception)
-            {
+        //    }
+        //    catch (Exception)
+        //    {
 
-                throw;
-            }
+        //        throw;
+        //    }
 
-            return datos;//Devuelve el dataSet
-        }//Fin DataSet
+        //    return datos;//Devuelve el dataSet
+        //}//Fin DataSet
 
 
         public List<EntidadPacientes> ListarPacientesL(string condicion = "")
@@ -129,7 +129,7 @@ namespace Capa03AccesoDatos
             List<EntidadPacientes> pacientes;
             
 
-            string consultaPaciente = "Select IdPaciente, Nombre, PrimerApellido, SegundoApellido, Cedula, FechaNacimiento, Genero, Telefono, Correo, FechaCreacion, Estado from Funcionarios where Estado=1";
+            string consultaPaciente = "Select IdPaciente, Nombre, PrimerApellido, SegundoApellido, Cedula, FechaNacimiento, Genero, Telefono, Correo, FechaCreacion, Estado from Pacientes where Estado=1";
 
             //Si el parámetro condición no está vacío lo concatena a la consultaFuncioanrios
             if (!string.IsNullOrEmpty(condicion))

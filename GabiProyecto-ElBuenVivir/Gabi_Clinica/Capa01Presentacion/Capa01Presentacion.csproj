@@ -57,11 +57,35 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Configuracion.cs" />
+    <Compile Include="FrmControlAcceso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmControlAcceso.Designer.cs">
+      <DependentUpon>FrmControlAcceso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEspecialidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEspecialidad.Designer.cs">
+      <DependentUpon>FrmEspecialidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEspecialista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEspecialista.Designer.cs">
+      <DependentUpon>FrmEspecialista.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmFuncionarios.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmFuncionarios.Designer.cs">
       <DependentUpon>FrmFuncionarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHorarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHorarios.Designer.cs">
+      <DependentUpon>FrmHorarios.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmInicio.cs">
       <SubType>Form</SubType>
@@ -89,8 +113,20 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmControlAcceso.resx">
+      <DependentUpon>FrmControlAcceso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEspecialidad.resx">
+      <DependentUpon>FrmEspecialidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEspecialista.resx">
+      <DependentUpon>FrmEspecialista.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmFuncionarios.resx">
       <DependentUpon>FrmFuncionarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHorarios.resx">
+      <DependentUpon>FrmHorarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmInicio.resx">
       <DependentUpon>FrmInicio.cs</DependentUpon>

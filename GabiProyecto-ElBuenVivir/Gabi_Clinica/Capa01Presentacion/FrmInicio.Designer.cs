@@ -31,16 +31,19 @@ namespace Capa01Presentacion
         {
             this.mnuMenu = new System.Windows.Forms.MenuStrip();
             this.mnuPacientes = new FontAwesome.Sharp.IconMenuItem();
+            this.mnuFuncionarios = new FontAwesome.Sharp.IconMenuItem();
             this.mnuEspecialidades = new FontAwesome.Sharp.IconMenuItem();
             this.mnuMantenimiento = new FontAwesome.Sharp.IconMenuItem();
+            this.puestoDeTrabajoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuPago = new FontAwesome.Sharp.IconMenuItem();
             this.mnuAcercaDe = new FontAwesome.Sharp.IconMenuItem();
             this.mnuTitulo = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.pnlContenedor = new System.Windows.Forms.Panel();
-            this.mnuFuncionarios = new FontAwesome.Sharp.IconMenuItem();
-            this.puestoDeTrabajoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.especialidadesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.establecerHorarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.controlDeAccesoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuMenu.SuspendLayout();
             this.mnuTitulo.SuspendLayout();
             this.SuspendLayout();
@@ -75,9 +78,25 @@ namespace Capa01Presentacion
             this.mnuPacientes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.mnuPacientes.Click += new System.EventHandler(this.mnuPacientes_Click);
             // 
+            // mnuFuncionarios
+            // 
+            this.mnuFuncionarios.AutoSize = false;
+            this.mnuFuncionarios.IconChar = FontAwesome.Sharp.IconChar.UserGear;
+            this.mnuFuncionarios.IconColor = System.Drawing.Color.Black;
+            this.mnuFuncionarios.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.mnuFuncionarios.IconSize = 50;
+            this.mnuFuncionarios.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.mnuFuncionarios.Name = "mnuFuncionarios";
+            this.mnuFuncionarios.Size = new System.Drawing.Size(122, 69);
+            this.mnuFuncionarios.Text = "Funcionarios";
+            this.mnuFuncionarios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.mnuFuncionarios.Click += new System.EventHandler(this.mnuFuncionarios_Click);
+            // 
             // mnuEspecialidades
             // 
             this.mnuEspecialidades.AutoSize = false;
+            this.mnuEspecialidades.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.establecerHorarioToolStripMenuItem});
             this.mnuEspecialidades.IconChar = FontAwesome.Sharp.IconChar.RodSnake;
             this.mnuEspecialidades.IconColor = System.Drawing.Color.Black;
             this.mnuEspecialidades.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -85,14 +104,16 @@ namespace Capa01Presentacion
             this.mnuEspecialidades.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.mnuEspecialidades.Name = "mnuEspecialidades";
             this.mnuEspecialidades.Size = new System.Drawing.Size(100, 69);
-            this.mnuEspecialidades.Text = "Especialidades";
+            this.mnuEspecialidades.Text = "Especialistas";
             this.mnuEspecialidades.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
             // mnuMantenimiento
             // 
             this.mnuMantenimiento.AutoSize = false;
             this.mnuMantenimiento.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.puestoDeTrabajoToolStripMenuItem});
+            this.puestoDeTrabajoToolStripMenuItem,
+            this.especialidadesToolStripMenuItem,
+            this.controlDeAccesoToolStripMenuItem});
             this.mnuMantenimiento.IconChar = FontAwesome.Sharp.IconChar.Tools;
             this.mnuMantenimiento.IconColor = System.Drawing.Color.Black;
             this.mnuMantenimiento.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -102,6 +123,13 @@ namespace Capa01Presentacion
             this.mnuMantenimiento.Size = new System.Drawing.Size(100, 69);
             this.mnuMantenimiento.Text = "Mantenimiento";
             this.mnuMantenimiento.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            // 
+            // puestoDeTrabajoToolStripMenuItem
+            // 
+            this.puestoDeTrabajoToolStripMenuItem.Name = "puestoDeTrabajoToolStripMenuItem";
+            this.puestoDeTrabajoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.puestoDeTrabajoToolStripMenuItem.Text = "Puesto de Trabajo";
+            this.puestoDeTrabajoToolStripMenuItem.Click += new System.EventHandler(this.puestoDeTrabajoToolStripMenuItem_Click);
             // 
             // mnuPago
             // 
@@ -168,26 +196,26 @@ namespace Capa01Presentacion
             this.pnlContenedor.Size = new System.Drawing.Size(1067, 418);
             this.pnlContenedor.TabIndex = 3;
             // 
-            // mnuFuncionarios
+            // especialidadesToolStripMenuItem
             // 
-            this.mnuFuncionarios.AutoSize = false;
-            this.mnuFuncionarios.IconChar = FontAwesome.Sharp.IconChar.UserGear;
-            this.mnuFuncionarios.IconColor = System.Drawing.Color.Black;
-            this.mnuFuncionarios.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.mnuFuncionarios.IconSize = 50;
-            this.mnuFuncionarios.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.mnuFuncionarios.Name = "mnuFuncionarios";
-            this.mnuFuncionarios.Size = new System.Drawing.Size(122, 69);
-            this.mnuFuncionarios.Text = "Funcionarios";
-            this.mnuFuncionarios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.mnuFuncionarios.Click += new System.EventHandler(this.mnuFuncionarios_Click);
+            this.especialidadesToolStripMenuItem.Name = "especialidadesToolStripMenuItem";
+            this.especialidadesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.especialidadesToolStripMenuItem.Text = "Especialidades";
+            this.especialidadesToolStripMenuItem.Click += new System.EventHandler(this.especialidadesToolStripMenuItem_Click);
             // 
-            // puestoDeTrabajoToolStripMenuItem
+            // establecerHorarioToolStripMenuItem
             // 
-            this.puestoDeTrabajoToolStripMenuItem.Name = "puestoDeTrabajoToolStripMenuItem";
-            this.puestoDeTrabajoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.puestoDeTrabajoToolStripMenuItem.Text = "Puesto de Trabajo";
-            this.puestoDeTrabajoToolStripMenuItem.Click += new System.EventHandler(this.puestoDeTrabajoToolStripMenuItem_Click);
+            this.establecerHorarioToolStripMenuItem.Name = "establecerHorarioToolStripMenuItem";
+            this.establecerHorarioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.establecerHorarioToolStripMenuItem.Text = "Establecer Horario";
+            this.establecerHorarioToolStripMenuItem.Click += new System.EventHandler(this.establecerHorarioToolStripMenuItem_Click);
+            // 
+            // controlDeAccesoToolStripMenuItem
+            // 
+            this.controlDeAccesoToolStripMenuItem.Name = "controlDeAccesoToolStripMenuItem";
+            this.controlDeAccesoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.controlDeAccesoToolStripMenuItem.Text = "Control de Acceso";
+            this.controlDeAccesoToolStripMenuItem.Click += new System.EventHandler(this.controlDeAccesoToolStripMenuItem_Click);
             // 
             // FrmInicio
             // 
@@ -226,6 +254,9 @@ namespace Capa01Presentacion
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private FontAwesome.Sharp.IconMenuItem mnuFuncionarios;
         private System.Windows.Forms.ToolStripMenuItem puestoDeTrabajoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem especialidadesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem establecerHorarioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem controlDeAccesoToolStripMenuItem;
     }
 }
 
