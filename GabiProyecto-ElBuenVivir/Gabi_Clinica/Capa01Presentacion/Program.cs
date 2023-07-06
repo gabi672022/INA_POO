@@ -20,6 +20,7 @@ namespace Capa01Presentacion
             //Application.Run(new FrmFuncionarios());
             //Application.Run(new FrmPuestoTrabajo());
             Application.Run(new FrmInicio());
+            //Application.Run(new FrmCalendario());
         }
     }
 }

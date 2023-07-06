@@ -131,10 +131,14 @@ create table Pagos (
 create table HorariosEspecialistas (
 	IdHorarioEspecialista int identity(1,1) constraint pk_IdHorarioEspecialista primary key,
 	IdEspecialista int not null constraint fk2_IdEspecialista foreign key (IdEspecialista) references Especialistas(IdEspecialista),
+	FechaAgenda datetime,
 	Dia char,
 	Hora_inicio time,
 	Hora_fin  time
 )
+
+--alter table HorariosEspecialistas
+--add FechaAgenda datetime
 
 --12.*************
 create table Diagnosticos (

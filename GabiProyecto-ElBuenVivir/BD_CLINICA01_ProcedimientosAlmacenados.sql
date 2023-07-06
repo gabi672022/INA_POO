@@ -476,3 +476,64 @@ Insert into HorariosEspecialistas(IdEspecialista, Dia, Hora_inicio, Hora_fin) va
 (2,'V', '3:00', '3:30');
 
 select NombreEsp from Especialidades;
+
+select  f.Nombre, f.PrimerApellido, f.SegundoApellido, e.NombreEsp
+from Funcionarios f 
+inner join FuncionariosEspecialidades f1 on f.IdFuncionario= f1.IdFuncionario
+inner join Especialidades e on f1.IdEspecialidad = e.IdEspecialidad
+inner join Especialistas e2 on f1.IdEspecialidad= e2.IdEspecialidad
+inner join PuestoTrabajo p on p.IdPuestoTrabajo = f.IdPuestoTrabajo
+where p.Nombre= 'Médico'and e.NombreEsp='Medicina General';
+
+select * from Especialistas;
+
+
+select  f.Nombre, f.PrimerApellido, f.SegundoApellido, e.NombreEsp
+from Funcionarios f 
+inner join FuncionariosEspecialidades f1 on f.IdFuncionario= f1.IdFuncionario
+inner join Especialidades e on f1.IdEspecialidad = e.IdEspecialidad
+inner join Especialistas e2 on f1.IdEspecialidad= e2.IdEspecialidad
+inner join PuestoTrabajo p on p.IdPuestoTrabajo = f.IdPuestoTrabajo
+where p.Nombre= 'Médico'and e.NombreEsp='Medicina General';
+
+
+--******************************************************************************
+--HORARIOS ESPECIALISTAS
+--******************************************************************************
+go
+create or alter proc spInsertarHorarios(
+@IdEspecialista int,
+@Dia varchar(1),
+@Hora_inicio time,
+@Hora_fin time
+)
+as
+begin
+	if (exists(select  1 from HorariosEspecialistas h where h.IdEspecialista= @IdEspecialista and h.Dia= @Dia and ( (@Hora_inicio >= h.Hora_inicio and @Hora_inicio < h.Hora_fin) or (@Hora_fin > h.Hora_inicio and @Hora_fin<= h.Hora_fin) or (@Hora_inicio<= h.Hora_inicio and @Hora_fin>=h.Hora_fin)))
+	)
+	begin
+		raiserror ('Error: Existe un choque de horario', 16,1)
+		return
+	end
+	insert into HorariosEspecialistas(IdEspecialista, Dia, Hora_inicio, Hora_fin) values
+	(@IdEspecialista, @Dia, @Hora_inicio, @Hora_fin) 
+	select 'Horario insertado correctamente.' as Mensaje
+end
+
+--exec
+go
+declare @IdEspecialista int
+declare @Dia varchar(1)
+declare @Hora_inicio time
+declare @Hora_fin time
+
+exec spInsertarHorarios
+@IdEspecialista= 1,
+@Dia = 'M',
+@Hora_inicio= '10:00',
+@Hora_fin= '12:30'
+
+
+
+select * from HorariosEspecialistas
+select * from Especialistas

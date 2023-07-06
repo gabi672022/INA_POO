@@ -77,7 +77,8 @@ namespace Capa01Presentacion
 
         private void establecerHorarioToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AbrirFormulario(mnuEspecialidades, new FrmHorarios());
+            //AbrirFormulario(mnuEspecialidades, new FrmHorarios());
+            AbrirFormulario(mnuEspecialidades, new FrmCalendario());
         }
 
         private void controlDeAccesoToolStripMenuItem_Click(object sender, EventArgs e)

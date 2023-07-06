@@ -35,9 +35,6 @@ namespace Capa02Logica
             }
 
 
-
-
-
             return id;
         }//FinInsertarPuestoTrabajo
 

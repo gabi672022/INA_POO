@@ -39,9 +39,9 @@ namespace Capa01Presentacion
         {
             LogicaEspecialidades logicaEspecialidades = new LogicaEspecialidades(Configuracion.getCadenaConexion);
             List<EntidadEspecialidades> objListaEspecialidades = logicaEspecialidades.listaEspecialidades();
-            cbbEspecialidades.DataSource = objListaEspecialidades;
-            cbbEspecialidades.DisplayMember = "NombreEsp";
-            cbbEspecialidades.ValueMember = "IdEspecialidad";
+            //cbbEspecialidades.DataSource = objListaEspecialidades;
+            //cbbEspecialidades.DisplayMember = "NombreEsp";
+            //cbbEspecialidades.ValueMember = "IdEspecialidad";
 
 
         }//FinCargarEspecialidades
